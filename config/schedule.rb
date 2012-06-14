@@ -19,9 +19,9 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 1.hour do
-  filepath = File.expand_path(File.join(File.dirname(__FILE__), "..", "lbc.rb"))
-  command "#{filepath} -c -v -s >> /tmp/lbc.log"
+every 30.minutes do
+  path = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+  command "cd #{path} ; ./lbc.rb -c -v -s >> /tmp/lbc.log"
 end
 
 
