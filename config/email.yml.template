@@ -1,0 +1,11 @@
+smtp:
+  address: "smtp.gmail.com"
+  port: "587"
+  enable_starttls_auto: true
+  user_name: "<your-gmail-username>@gmail.com"
+  password: "<your-gmail-password>"
+  authentication: login
+  domain: "localhost.localdomain"
+
+email:
+  to: "<target-email@domain.com>"
