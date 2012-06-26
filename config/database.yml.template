@@ -1,0 +1,6 @@
+development:
+  adapter:  'postgres'
+  host:     'localhost'
+  database: 'alertes-lbc'
+  user:     'user'
+  password: 'password'

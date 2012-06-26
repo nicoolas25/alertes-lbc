@@ -2,3 +2,4 @@ vendor/
 .bundle/
 *.sqlite3
 config/email.yml
+config/database.yml

@@ -1,0 +1,22 @@
+:css
+  label {display: inline-block; width: 100px;}
+
+%h1 Alertes le bon coin
+
+%h2 Ajouter une alerte
+
+%form(method='post' action='/add')
+  .field
+    %label(for='request-name') Nom :
+    %input(type='text' name='name' id='request-name')
+
+  .field
+    %label(for='request-url') Url :
+    %input(type='text' name='url' id='request-url')
+
+  .field
+    %label(for='request-url') Periodicité :
+    %input(type='text' name='period' id='request-period')
+
+  .action
+    %input(type='submit' value='Ajouter')

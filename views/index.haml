@@ -1,0 +1,12 @@
+%h1 Alertes le bon coin
+
+%h2 Liste des alertes
+
+%ul
+  - @requests.each do |req|
+    %li
+      = req.name
+      %a{href: "/delete/#{req.id}"} Supprimmer
+
+
+%a(href="/add") Ajouter une requête
