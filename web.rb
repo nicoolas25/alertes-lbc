@@ -35,6 +35,7 @@ class HelloApp < Sinatra::Base
           :body => "J'ai une nouvelle annonce ici : #{r.url}")
       end
     end
+    redirect '/'
   end
 
   get '/add' do
