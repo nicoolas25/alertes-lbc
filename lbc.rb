@@ -39,6 +39,8 @@ unless DB.tables.include?(:requests)
     String :url
     String :page_id
     String :name
+    Integer :period
+    Time :last_verification
 
     index :url, :unique => true
   end

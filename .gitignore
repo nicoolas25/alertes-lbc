@@ -1,5 +1,4 @@
 vendor/
 .bundle/
 *.sqlite3
-Gemfile.lock
 config/email.yml
