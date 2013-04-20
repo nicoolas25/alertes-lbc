@@ -23,6 +23,6 @@ class Request < Sequel::Model(:requests)
   end
 
   def last_page_id
-    @last_page_id ||= /\/(\d+).htm/.match(doc.css('div.list-ads > a:first-child').first[:href])[1]
+    @last_page_id ||= /\/(\d+).htm/.match(doc.css('div.list-lbc > a:first-child').first[:href])[1]
   end
 end

@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.com/'
 
 gem 'pg'
 gem 'sequel'
