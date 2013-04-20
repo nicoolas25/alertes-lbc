@@ -5,7 +5,7 @@
 %ul
   - @requests.each do |req|
     %li
-      = req.name
+      %a{href: req.url}= req.name
       %a{href: "/delete/#{req.id}"} Supprimmer
 
 
